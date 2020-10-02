@@ -13,7 +13,7 @@ def recieve():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Specify port
-    port = 5996
+    port = 6000
 
     # Bind to port 
     s.bind((socket.gethostname(), port))
@@ -26,6 +26,7 @@ def recieve():
 
     # Listen for client message
     while True:
+ 
         # Recieved OS assigned socket and address
         clientsocket, address = s.accept()
 
@@ -40,7 +41,9 @@ def recieve():
 
         # Print out message
         print("Message recieved: " + msg)  
+   
     #End of while loop
+    
 # EOF
 
 
