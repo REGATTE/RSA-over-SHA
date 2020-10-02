@@ -1,4 +1,4 @@
-# Digital-Signature-Verification
+# RSA-over-SHA1
 
 Encrypt message and generate signature on Sender, and decrypt and ensure message integrity on receiver.
 
