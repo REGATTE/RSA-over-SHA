@@ -2,6 +2,11 @@
 
 Encrypt message and generate signature on Sender, and decrypt and ensure message integrity on receiver.
 
+## Requirements
+
+- sympy
+- python3
+
 ## Usage
 
 - bootup server running `python3 server.py`
@@ -11,6 +16,7 @@ Encrypt message and generate signature on Sender, and decrypt and ensure message
 
 - [X] Server and Client Setup  
 - [X] Code Review and Commentted  
-- [ ] Add Digital Signatures  
-- [ ] Encrypt using RSA  
-- [ ] Client side decryption  
+- [X] Add Digital Signatures  
+- [X] Encrypt using RSA  
+- [X] Client side decryption  
+- [X] Show validation messages
