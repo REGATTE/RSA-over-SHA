@@ -6,3 +6,4 @@
 - Add additional features
 - Bug Fix?
 - Make testing script
+- add __DEBUG__ python flag
