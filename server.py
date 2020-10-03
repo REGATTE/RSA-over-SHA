@@ -9,24 +9,27 @@
 # Import python socket, random, sympy, hashlib, pickle module
 import socket, random, sympy, hashlib, pickle
 
-
 # Connect and recieve message
 def recieve():
 
-    # Define prime upper bound
-    PRIME_LIMIT = 1000000000000
-
+    # Take prime upper bound
+    PRIME_LIMIT = int(input("Enter PRIME the upper bound (1000,1000000000): "))
+   
     # Generate Key Pair
     e,d,n = generate(sympy.randprime(1,PRIME_LIMIT),sympy.randprime(1,PRIME_LIMIT))
 
+    # Show keys
     print(f"Encryption Key: {e} \n Mod Key: {n} \n Secret Key: {d}")
 
     # Initialize socket stream
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
+    
+    # Indicate initialisation
+    print("socket is initialising")
+    
     # Specify port
     port = 6000
-
+    
     # Bind to port 
     s.bind((socket.gethostname(), port))
 
