@@ -20,3 +20,9 @@ Encrypt message and generate signature on Sender, and decrypt and ensure message
 - [X] Encrypt using RSA  
 - [X] Client side decryption  
 - [X] Show validation messages
+
+## Possible Addons (contributions)
+
+- [ ] Testing Scripts. (medium)
+- [ ] Rework to use __DEBUG__ python for debug messages. (easy)
+- [ ] Add more comments for documentation. (supa-ez)
