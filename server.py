@@ -13,7 +13,7 @@ import socket, random, sympy, hashlib, pickle
 def recieve():
 
     # Take prime upper bound
-    PRIME_LIMIT = int(input("Enter PRIME the upper bound (1000,1000000000): "))
+    PRIME_LIMIT = int(input("Enter PRIME the upper bound (1000,1000000000) - (Higher is better): "))
    
     # Generate Key Pair
     e,d,n = generate(sympy.randprime(1,PRIME_LIMIT),sympy.randprime(1,PRIME_LIMIT))
@@ -25,7 +25,7 @@ def recieve():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
     # Indicate initialisation
-    print("socket is initialising")
+    print("Socket stream initialised as TCP/IP")
     
     # Specify port
     port = 6000
@@ -53,7 +53,7 @@ def recieve():
 
         # Send Mod Key (public)
         clientsocket.send(bytes(str(n),"utf-8"))
-
+  
         # Recieve pickle data stream
         data_string = clientsocket.recv(4096)
 
